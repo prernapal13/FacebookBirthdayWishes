@@ -6,7 +6,7 @@ A facebook utility, implemented using Java, Selenium Webdriver and TestNG. Page 
 
 # Pre-Requisite
 1. Please provide your facebook user name and password as parameters in 'loginToYourAccount' method in TestFBBithdayBot.java file.
-2. If you wish to change the generic message being posted, please edit the message being pass to 'writeBirthdayWishes' method in 'TestFBBithdayBot.java' file. At present the birthday wish that will be posted is 'Happy Birthday!!'.
+2. If you wish to change the generic message being posted, please edit the message being passed to 'writeBirthdayWishes' method in 'TestFBBithdayBot.java' file. At present the birthday wish that will be posted is 'Happy Birthday!!'.
 
 # Possible Flows
 1. Opens 'Firefox' in incognito mode > Navigates to 'http://www.facebook.com/' > Login to the account provided > Checks if there are any birthday notifications on the day > If one or more friends have birthday, goes to the notification for birthday > Posts the birthday wish on friend's wall > Logs out of facebook
