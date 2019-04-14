@@ -11,3 +11,4 @@ A facebook utility, implemented using Java, Selenium Webdriver and TestNG. Page 
 # Possible Flows
 1. Opens 'Firefox' in private mode > Navigates to 'http://www.facebook.com/' > Login to the account provided > Checks if there are any birthday notifications on the day > If one or more friends have birthday, goes to the notification for birthday > Posts the birthday wish on friend's wall > Logs out of facebook.
 2. Opens 'Firefox' in private mode > Navigates to 'http://www.facebook.com/' > Login to the account provided > Checks if there are any birthday notifications on the day > If there are no birthday notifications, print 'None of the friends have their birthday today' > Logs out of facebook.
+
