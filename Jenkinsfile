@@ -9,8 +9,8 @@ pipeline {
 		}
 		stage('compile'){
 			steps{
-			def mvnHome = tool name: 'maven_def', type: 'maven'
-			sh "${mvnHome}/bin/mvn package"
+			//def mvnHome = tool name: 'maven_def', type: 'maven'
+			sh "D:/Java_Learning/apache-maven-3.5.3/bin/mvn package"
 			}
 		}
 	}
