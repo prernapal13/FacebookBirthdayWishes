@@ -7,6 +7,7 @@ package auto.testcases;
 import org.testng.annotations.Test;
 import auto.pages.FBLoginPage;
 import auto.utility.Init;
+import org.testng.Assert;
 
 public class TestFBBithdayBot extends Init {
 
@@ -17,5 +18,12 @@ public class TestFBBithdayBot extends Init {
 		fbLoginPage.loginToYourAccount("<username>", "<password>");
 		fbLoginPage.navigateToFriendsBirthdaysToday();
 		fbLoginPage.writeBirthdayWishes("Happy Birthday!!");
+	}
+	
+	@Test
+	public void testDummyTestCase() {
+		FBLoginPage fbLoginPage = new FBLoginPage(driver);
+		fbLoginPage.verifyFBLoginPageHeader();
+		Assert.assertTrue(true, "Dummy test case");
 	}
 }
