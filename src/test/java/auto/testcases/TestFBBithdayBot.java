@@ -11,7 +11,7 @@ import org.testng.Assert;
 
 public class TestFBBithdayBot extends Init {
 
-	@Test
+	//@Test
 	public void testNavigateToFriendsBirthday() {
 		FBLoginPage fbLoginPage = new FBLoginPage(driver);
 		fbLoginPage.verifyFBLoginPageHeader();
