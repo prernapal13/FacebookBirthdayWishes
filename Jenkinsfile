@@ -1,4 +1,4 @@
-node {
+pipeline {
    stage('SCM Checkout'){
     // Clone repo
 	git 'https://github.com/prernapal13/FacebookBirthdayWishes'
