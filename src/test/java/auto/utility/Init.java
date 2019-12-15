@@ -4,6 +4,7 @@ package auto.utility;
  */
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.testng.annotations.AfterMethod;
@@ -19,8 +20,9 @@ public class Init {
 	@BeforeMethod(alwaysRun = true)
 	public void setUp() {
 		System.out.println("*** Setup ***");
-		FirefoxProfile ffprofile = createFirefoxProfile();
-		driver = new FirefoxDriver(ffprofile);
+		//FirefoxProfile ffprofile = createFirefoxProfile();
+		//driver = new FirefoxDriver(ffprofile);
+		driver = new ChromeDriver();
 		driver.get("http://www.facebook.com/");
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
